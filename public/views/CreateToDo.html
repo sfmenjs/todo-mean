@@ -1,0 +1,21 @@
+<div ng-controller="HomeController">
+	<br/>
+	<form class="well container col-sm-4 col-sm-offset-4" ng-submit="addToDo()">
+		<h1 class="text-center">What do you need to do?</h1>
+		<hr>
+		<div class="row">
+			<span class="col-sm-12">
+				<input type="text" placeholder="Title.." ng-model="newTitle" class="form-control">
+			</span>
+		</div>
+		<br>
+		<div class="row">
+			<span class="col-sm-12">
+				<textarea class="form-control" placeholder="Description.." classs="form-control" ng-model="newDesc" rows="5"></textarea>
+
+			</span>
+		</div>
+		<hr>
+		<button class="btn btn-primary btn-block" type="submit">Submit</button>
+	</form>
+</div>

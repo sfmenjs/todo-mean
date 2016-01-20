@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html ng-app="app">
+<head>
+	<title>My First App</title>
+	<link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap_theme.min.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/site.css">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#/">To Do List</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#/">Home</a></li>
+					<li><a href="#/Create">Add Task</a></li>
+					<li><a href="#/">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a>Something</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+	<div ui-view></div>
+	<script src="./lib/angular/angular.js"></script>
+	<script src="./lib/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="./lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+	<script src="./lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script src="/javascripts/app.js"></script>
+	<script src="/javascripts/services/ToDoFactory.js"></script>
+	<script src="/javascripts/controllers/HomeController.js"></script>
+	<script src="/javascripts/controllers/EditModalController.js"></script>
+</body>
+</html>
